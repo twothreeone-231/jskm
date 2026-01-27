@@ -438,7 +438,7 @@ jskm <- function(sfit,
       plot.title = element_text(face = "bold", size = 11, hjust = 0.5),
       # 1. 축 제목(x, y축 이름) 설정
       axis.title.x = element_text(vjust = 0.7, size = 11, colour = "black", face = "bold", margin = margin(t = 15)),
-      axis.title.y = element_text(vjust = -10, size = 11, colour = "black", face = "bold"),
+      axis.title.y = element_text(vjust = 1, size = 11, colour = "black", face = "bold"),
       
       # 2. 축 숫자(Tick labels - 0, 25, 50... 등) 설정
       axis.text.x = element_text(size = 10, colour = "black"),
