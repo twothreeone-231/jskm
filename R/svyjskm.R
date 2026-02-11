@@ -485,7 +485,7 @@ svyjskm <- function(sfit,
       panel.border = element_blank()
     ) +
     # [수정] x축 여백 변경
-    scale_x_continuous(xlabs, breaks = times, limits = xlims, expand = expansion(mult = c(0.005, 0.005)))
+    scale_x_continuous(xlabs, breaks = times, limits = xlims, expand = expansion(mult = c(0.001, 0.001)))
 
   # y축 설정 부분
   if (!is.null(surv.by)) {
@@ -494,14 +494,14 @@ svyjskm <- function(sfit,
       limits = ylims, 
       labels = scale_labels, 
       breaks = seq(ylims[1], ylims[2], by = surv.by),
-      expand = expansion(mult = c(0.005, 0.005)) # 상하 여백 변경
+      expand = expansion(mult = c(0.001, 0.001)) # 상하 여백 변경
     )
   } else {
     p <- p + scale_y_continuous(
       name = ylabs,                  
       limits = ylims, 
       labels = scale_labels,
-      expand = expansion(mult = c(0.005, 0.005)) # 상하 여백 변경
+      expand = expansion(mult = c(0.001, 0.001)) # 상하 여백 변경
     )
   }
 
